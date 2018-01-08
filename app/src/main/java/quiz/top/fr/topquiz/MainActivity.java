@@ -4,8 +4,10 @@ package quiz.top.fr.topquiz;
         import android.os.Bundle;
         import android.text.Editable;
         import android.text.TextWatcher;
+        import android.view.View;
         import android.widget.Button;
         import android.widget.EditText;
+        import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
     //Déclaration des Instances
@@ -42,5 +44,14 @@ public class MainActivity extends AppCompatActivity {
         });
 
     }
+
+
+    //Activation du bouton
+    public void actionJouer(View v) {
+        Button clicked = (Button) v;
+        Toast.makeText(this, "ok", Toast.LENGTH_SHORT).show();
+    }
+
+
 
 }

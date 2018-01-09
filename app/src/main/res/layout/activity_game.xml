@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="quiz.top.fr.topquiz.GameActivity"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <TextView
+        android:id="@+id/activity_game_question_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight="20"
+        android:gravity="center"
+        android:text="Question ?"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+    <Button
+        android:id="@+id/activity_game_answers1_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="10"
+        android:textColor="#07ed13"
+        android:background="#747474"
+        android:layout_margin="3dp"
+        android:text="Answers1" />
+
+    <Button
+        android:id="@+id/activity_game_answers2_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="10"
+        android:textColor="#07ed13"
+        android:background="#747474"
+        android:layout_margin="3dp"
+        android:text="Answers2" />
+
+    <Button
+        android:id="@+id/activity_game_answers3_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="10"
+        android:textColor="#07ed13"
+        android:background="#747474"
+        android:layout_margin="3dp"
+        android:text="Answers3" />
+
+    <Button
+        android:id="@+id/activity_game_answers4_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="10"
+        android:textColor="#07ed13"
+        android:background="#747474"
+        android:layout_margin="3dp"
+        android:text="Answers4" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="40"/>
+</LinearLayout>

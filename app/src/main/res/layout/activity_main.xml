@@ -36,7 +36,6 @@
         android:layout_gravity="center"
         android:layout_marginTop="20dp"
         android:background="@drawable/mybutton"
-        android:onClick="actionJouer"
         android:paddingEnd="30dp"
         android:paddingStart="30dp"
         android:text="Jouer" />

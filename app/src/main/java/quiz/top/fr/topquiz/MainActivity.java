@@ -1,5 +1,7 @@
 package quiz.top.fr.topquiz;
 
+        import android.content.Context;
+        import android.content.Intent;
         import android.support.v7.app.AppCompatActivity;
         import android.os.Bundle;
         import android.text.Editable;
@@ -13,6 +15,9 @@ public class MainActivity extends AppCompatActivity {
     //Déclaration des Instances
     private EditText editTextNom;
     private Button buttonJouer;
+    public Intent gameActivity ;
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -42,7 +47,14 @@ public class MainActivity extends AppCompatActivity {
             }
 
         });
+        buttonJouer.setOnClickListener(new  View.OnClickListener(){
+            @Override
+            public void onClick(View view) {
 
+                Intent gameActivity = new Intent(MainActivity.this, GameActivity.class);
+                startActivity(gameActivity);
+            }
+        });
     }
 
 
@@ -51,6 +63,12 @@ public class MainActivity extends AppCompatActivity {
         Button clicked = (Button) v;
         Toast.makeText(this, "ok", Toast.LENGTH_SHORT).show();
     }
+
+
+
+
+    //Démarrage de l'activité
+
 
 
 
